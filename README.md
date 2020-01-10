@@ -7,13 +7,13 @@ It is programmed using C and CUDA technologies. You can read the project report 
 ## Execution
 Use the following commands for compiling and testing:
 
-'''
+```
 make
 ./src/v0
 ./src/v1
 ./src/v2
 ./src/v3
-'''
+```
 
 ## Contributors
 Christoforidis Savvas, schristofo@ece.auth.gr
