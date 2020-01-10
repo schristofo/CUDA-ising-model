@@ -16,4 +16,5 @@ make
 ```
 
 ## Contributors
-Christoforidis Savvas, schristofo@ece.auth.gr  Portokalidis Stavros, stavport@ece.auth.gr
+Christoforidis Savvas, schristofo@ece.auth.gr </br>
+Portokalidis Stavros, stavport@ece.auth.gr
