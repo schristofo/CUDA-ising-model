@@ -74,20 +74,21 @@ void ising( int *G, double *w, int k, int n){
     old = current;
     current = tmp;
 
-    // terminate if no changes are made
-    int areEqual = 0;
-    for(int i=0; i<n; i++){
-      for(int j=0; j<n; j++){
-        if(old(i,j,n) == current(i,j,n)){
-          areEqual++;
-        }
+  // terminate if no changes are made
+  int areEqual = 1;
+  for(int i=0; i<n; i++){
+    for(int j=0; j<n; j++){
+      if(old(i,j,n) != current(i,j,n)){
+        areEqual = 0;
+        i=n;
+        j=n;
       }
     }
-    // termination branch
-    if(areEqual == n*n){
-      printf("terminated: spin values stay same (step %d)\n" , l);
-      exit(0);
-    }
+  }
+  // termination branch
+  if(areEqual == 1){
+    printf("terminated: spin values stay same (step %d)\n" , l);
+    exit(0);
   }
 
   free(old);
